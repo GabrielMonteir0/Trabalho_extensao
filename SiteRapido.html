@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Rápido</title>
+    <style>
+        .minha-div {
+            background-color: blueviolet;
+            padding: 15px;
+            color: white;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Title unit</h1>
+
+    <div id="minha-div" class="minha-div" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" ondblclick="voltar()">
+        interaja...
+    </div>
+
+    <script>
+        function clicar() {
+            var a = document.getElementById('minha-div');
+            a.innerText = 'clicou!';
+            a.style.background = 'red'
+        }
+        function entrar() {
+            var b = document.getElementById('minha-div');
+            b.innerText = 'entrou!';
+        }
+        function sair() {
+            var c = document.getElementById('minha-div');
+            c.innerText = 'saiu';
+        }
+        function voltar() {
+            var d = document.getElementById('minha-div');
+            d.innerText = 'voltar';
+            d.style.background = "blueviolet"
+        }
+    </script>
+</body>
+</html>
